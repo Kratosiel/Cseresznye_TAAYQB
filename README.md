@@ -57,14 +57,24 @@ Az alkalmazás visszakap egy json objectumot a weboldaltol webrequesten kereszt�
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ASP.NET
+
+
 1x2p program.cs beállítása wwwroot mappában tárolt statikus tartalmak megosztására 2p
+
 1x3p Teljes SQL tábla adatainak szolgáltatása API végponton keresztül 3p
+
 1x5p Új rekord felvétele HttpPost metóduson keresztül SQL táblába 5p
+
 3x1p Az alkalmazásban használt táblánként pont 1p (egy tábla)
+
 1x1p Az adatbázis adatainak forrásmegjelölése értsd: miből készült és hogyan 1p
+
 1x2p Az adatbázis saját Azure SQL szerveren van 2p
+
 ![image](https://github.com/user-attachments/assets/67e0d7b0-766f-4f63-82c0-40638ee38958)
+
 A táblát és az adatokat is egy-egy querry-vel vittem fel SSMS-ből:
+
 CREATE TABLE IBMPrices (
     Id INT IDENTITY(1,1) PRIMARY KEY,
     Date DATE,
@@ -74,15 +84,24 @@ CREATE TABLE IBMPrices (
     ClosePrice DECIMAL(18, 4),
     Volume BIGINT
 );
+
+
 INSERT INTO dbo.IBMPrices (Date, OpenPrice, HighPrice, LowPrice, ClosePrice, Volume)
+
 VALUES
+
+
 
 Az adatokat chatgpt-vel json-ből vagy csv-ből átírattam, hogy insert-be lehessen tenni.
 
 1x1p A weboldalnak van egy értelmezhető struktúrája 1p
+
 1x1p A weboldal dinamikus tartalommal tölthető fel adatbázison keresztül 1p
+
 1x1p A weboldal javascriptet használ API végpont által szolgáltatott adatok betöltésére, hozott anyagként 1p
+
 1x1p A weboldal javascriptje más funkciót is ellát, mint az adatok betöltése 1p (Lehet új rekordot rögzíteni js-es megoldással)
+
 2x1p Scaffold-DbContext használata (ajándék) 1p (mivel csak egyszer használtam)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
