@@ -17,6 +17,7 @@ Van egy index html oldal, ahol js segítségével be lehet tlteni egy táblázat
 URL-k, amikkel ki lehet próbálni a programot.
 
 https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=IBM&apikey=demo
+
 https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=TSCO.LON&apikey=demo
 
 A demo-ban sajnos csak ez a két stock van :(
