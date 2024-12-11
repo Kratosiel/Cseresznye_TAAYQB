@@ -21,22 +21,34 @@ https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=IBM&apikey
 https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=TSCO.LON&apikey=demo
 
 A demo-ban sajnos csak ez a két stock van :(
+
 Alkalmazás tovább fejlesztése:
+
 Nem egy textbox-ba kell bemásolni az url-t, hanem külön url építő rész listbox segítségével, mely cseréli az url-ben a TIME_SERIES-t a megfelelőre és a Symbolt is.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Windows Forms Application:
+
 1x2p Az alkalmazásból a kilépés csak megerősítő kérdés után lehetséges. 2p
+
 3x1p Többablakos alkalmazás legalább két felugró ablakkal. Minden Form-nak saját osztályon kell alapulnia, és funcionalitással kell rendelkeznie. Az ablakok nyílhatnak gombokkal vagy felső menüből is. 3p
+
 1x2p Adatok megjelenítése 2p
+
 1x2p Ha a tábla adatforrása saját osztály. 2p
+
 1x5p Tetszőleges diagram rajzolása 5p
+
 1x2p A diagram adatforrása tetszőleges módszerrel szűrhető 2p
+
 1x7p Excel munkafüzet generálása kódból, adatbázstába tartalmának megjelenítésével, legalább egy formázással  7p  ( itt formázás alatt nem tudom, mit értünk, mert én API requesttel dolgoztam )
 
 a Stock árak elemzése algoritmus:
+
 1x1p Az algoritmus egy önállóan értelmezhető egységet képez, az alkalmazástól függetlenül (értsd: könnyen újra lehetne használni máshol hasonló paraméterekkel)
+
 1x1p Az algoritmus értelmes szerepet kap az alkalmazásban és nem lehet beépített megoldásokra kicserélni, nincs túlbonyolítva
+
 1x1p Az algoritmus az adatbázis adataira épít 
 
 Ez nem szerepel a pontozólapon, de a Tanár úr azt mondta elszámolhatom:
