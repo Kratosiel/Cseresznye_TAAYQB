@@ -6,11 +6,15 @@ Neptun: TAAYQB
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Rövid leírás:
+
 Az alkalmazás egy Stock elemző alkalmazás. A főmenüből két ablak nyitható, az egyikben megadhatjuk az általunk kiválasztott api url-t, majd megszemlélhetjük, hogy milyen formában sikerült lekérni, ha a JSON forma megegyezik a mellette lévő mintával, akkor tudjuk, hogy az alkalmazás többi részében is működnie kell.
+
 A másik ablakban megadhatunk egy stock api request url-t, ami ( ha megfelelő az url, különben közli, hogy rossz url) megjeleníti az adatokat egy datagridviewban, ezután elkézíti a dátumokkal együtt a grafikon, melyen ábrázolja, hoogyan változott az ár. További features: Egy gomb megnyomásával pár elemző statisztikai adatot kapunk az árfolyam mozgásról.
+
 Egy másik gombbal kiírathatjuk a datagridview, vagyis a stock adatait egy csv formában.
 
 Továbbá van egy asp.net web api is, ami saját adatbázisból dolgozik, melybe az IBM stock adatai vannak feltöltve havi bontásban 2020-tól. Lehet a swaggeren keresztül Get metódussal lekérni az adatbázist és lehet ugyanitt a POST metódussal új rekordot rögzíteni.
+
 Van egy index html oldal, ahol js segítségével be lehet tlteni egy táblázatot az IBM stock price adatbázissal, majd ebbe új rekordot lehet felvenni.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
