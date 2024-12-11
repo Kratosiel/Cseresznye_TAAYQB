@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Stock dadatok</title>
+    <link href="StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>IBM stock adatok</h1>
+    <p><button id="betolto">Árak betöltése</button></p>
+    <p>Új adat rögzítése</p>
+    <p><input id="datum" type="date" placeholder="Időszak vége" /></p>
+    <p><input id="open" type="number" placeholder="nyito" /></p>
+    <p><input id="high" type="number" placeholder="Legmagasabb" /></p>
+    <p><input id="low" type="number" placeholder="Legalacsonyabb" /></p>
+    <p><input id="close" type="number" placeholder="Záró" /></p>
+    <p><input id="volume" type="number" placeholder="Volumen" /></p>
+    <p><button id="rogzito">Rögzítés</button></p>
+    <table>
+        <thead>
+            <tr>
+                <th>Dátum</th>
+                <th>Nyitó ár</th>
+                <th>Legmagasabb ár</th>
+                <th>Legalacsonyabb ár</th>
+                <th>Záró ár</th>
+                <th>Volumen</th>
+            </tr>
+        </thead>
+        <tbody id="tb_stocks">
+        </tbody>
+    </table>
+
+    <script>
+
+        document.getElementById("betolto").addEventListener("click", () => {
+
+            fetch("api/Ibmprice").then(v => v.json()).then(o => {
+                let tbody = document.getElementById("tb_stocks");
+                console.log(o);
+                var tabla = document.getElementById("tb_stocks");
+                for (var i = 0; i < o.length; i++) {
+
+                    var sor = document.createElement("tr");
+                    sor.innerHTML = `
+                                            <td>${o[i].date}</td>
+                                            <td>${o[i].openPrice}</td>
+                                            <td>${o[i].highPrice}</td>
+                                            <td>${o[i].lowPrice}</td>
+                                            <td>${o[i].closePrice}</td>
+                                            <td>${o[i].volume}</td>
+                                        `;
+                    tabla.appendChild(sor);
+
+                }
+            })
+
+
+        })
+
+
+        document.getElementById("rogzito").addEventListener("click", () => {
+            var stockData = {
+                "date": document.getElementById("datum").value,
+                "openPrice": document.getElementById("open").value,
+                "highPrice": document.getElementById("high").value,
+                "lowPrice": document.getElementById("low").value,
+                "closePrice": document.getElementById("close").value,
+                "volume": document.getElementById("volume").value
+
+            };
+            fetch("api/Ibmprice", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(stockData)
+            }).then(v => {
+                if (v.ok) {
+                    alert("Siker");
+                }
+                else {
+                    alert("Hiba");
+                }
+            });
+        });
+
+
+
+
+
+    </script>
+
+</body>
+</html>
