@@ -17,6 +17,9 @@ Továbbá van egy asp.net web api is, ami saját adatbázisból dolgozik, melybe
 
 Van egy index html oldal, ahol js segítségével be lehet tlteni egy táblázatot az IBM stock price adatbázissal, majd ebbe új rekordot lehet felvenni.
 
+![image](https://github.com/user-attachments/assets/8389efdc-2af8-4e79-95f3-569f3ba5287e)
+
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 URL-k, amikkel ki lehet próbálni a programot.
 
