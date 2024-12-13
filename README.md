@@ -15,7 +15,7 @@ Egy másik gombbal kiírathatjuk a datagridview, vagyis a stock adatait egy csv 
 
 Továbbá van egy asp.net web api is, ami saját adatbázisból dolgozik, melybe az IBM stock adatai vannak feltöltve havi bontásban 2020-tól. Lehet a swaggeren keresztül Get metódussal lekérni az adatbázist és lehet ugyanitt a POST metódussal új rekordot rögzíteni.
 
-Van egy index html oldal, ahol js segítségével be lehet tlteni egy táblázatot az IBM stock price adatbázissal, majd ebbe új rekordot lehet felvenni.
+Van egy index html oldal, ahol js segítségével be lehet tlteni egy táblázatot az IBM stock price adatbázissal, majd ebbe új rekordot lehet felvenni. (A képeken az itthoni verzóm látható, ZH-n a kinézettel nem foglalkoztam, más betűtípus stb)
 
 ![image](https://github.com/user-attachments/assets/8389efdc-2af8-4e79-95f3-569f3ba5287e)
 
