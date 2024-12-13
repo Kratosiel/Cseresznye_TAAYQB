@@ -15,7 +15,7 @@ Egy másik gombbal kiírathatjuk a datagridview, vagyis a stock adatait egy csv 
 
 Továbbá van egy asp.net web api is, ami saját adatbázisból dolgozik, melybe az IBM stock adatai vannak feltöltve havi bontásban 2020-tól. Lehet a swaggeren keresztül Get metódussal lekérni az adatbázist és lehet ugyanitt a POST metódussal új rekordot rögzíteni.
 
-Van egy index html oldal, ahol js segítségével be lehet tlteni egy táblázatot az IBM stock price adatbázissal, majd ebbe új rekordot lehet felvenni. (A képeken az itthoni verzóm látható, ZH-n a kinézettel nem foglalkoztam, más betűtípus stb)
+Van egy index html oldal, ahol js segítségével be lehet tlteni egy táblázatot az IBM stock price adatbázissal, majd ebbe új rekordot lehet felvenni. (A képeken az itthoni verzióm látható, ZH-n a kinézettel nem foglalkoztam, más betűtípus stb)
 
 ![image](https://github.com/user-attachments/assets/8389efdc-2af8-4e79-95f3-569f3ba5287e)
 
@@ -46,6 +46,9 @@ Windows Forms Application:
 
 1x5p Tetszőleges diagram rajzolása 5p
 
+![image](https://github.com/user-attachments/assets/cbb82f01-2b46-4271-99bc-d697860fbe7f)
+
+
 1x2p A diagram adatforrása tetszőleges módszerrel szűrhető 2p
 
 1x7p Excel munkafüzet generálása kódból, adatbázstába tartalmának megjelenítésével, legalább egy formázással  7p  ( itt formázás alatt nem tudom, mit értünk, mert én API requesttel dolgoztam )
@@ -71,6 +74,8 @@ ASP.NET
 1x3p Teljes SQL tábla adatainak szolgáltatása API végponton keresztül 3p
 
 1x5p Új rekord felvétele HttpPost metóduson keresztül SQL táblába 5p
+![image](https://github.com/user-attachments/assets/2a6fd4f7-d75d-46f6-ab94-f7c9609b0681)
+
 
 3x1p Az alkalmazásban használt táblánként pont 1p (egy tábla)
 
